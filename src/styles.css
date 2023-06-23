@@ -1,0 +1,498 @@
+/*************************
+ELEMENTOS COMUNES
+**************************/
+
+
+/*************************
+Fonts
+**************************/
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat-VariableFont_wght.ttf") format('truetype');
+      /*Bug Chrome*/
+    font-weight: 1 999;
+
+}
+
+
+
+/*************************
+Main styles
+**************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #2A2A2A;
+    line-height: 1.5;
+    height: 100%;
+    background-color: #ffffff;
+
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    max-width: 800px;
+}
+
+.sectionTitle h1:before, .sectionTitle h1:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid;
+    margin: auto;
+    color:rgb(61,153,112);
+  }
+  .sectionTitle h1:before {
+    margin-right: 10px
+  }
+  .sectionTitle h1:after {
+    margin-left: 10px
+  }
+
+
+/*************************
+Header
+**************************/
+header {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: white;
+    position: sticky; top: 0;
+    box-shadow: 0 4px 6px #cccccc;
+    z-index:1;
+}
+
+.header-logo {
+    width: 150px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+header .container {
+    text-align: center;
+}
+
+
+@media (min-width: 576px) {
+    header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+/*****Navbar menu*****/
+nav {
+    color: white;
+    padding-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 5px 5px 0 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:#2A2A2A;
+    padding:0 5px 5px 5px;
+}
+
+nav ul li a:hover {
+    color:rgb(61,153,112);
+}
+
+nav li.active a {
+    font-weight: 900;
+    /*text-decoration: dashed underline #2A2A2A 1px;
+    text-underline-offset: 8px;*/
+    border-bottom: 1.5px dashed #2A2A2A;
+}
+
+@media (min-width: 576px) {
+    nav ul li {
+        font-size: 0.9rem;
+    }
+}
+
+
+/*************************
+Footer
+**************************/
+footer {
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    background-color:#2A2A2A;
+    background-color:rgb(61, 153, 112);
+    color: #FFFFFF;
+    line-height: 2.5;
+    font-size: 0.7rem;
+}
+
+footer .container {
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0px 3px 0 3px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color:#FFFFFF;
+}
+
+
+.footer ul li a:hover {
+    opacity: 0.3;
+}
+
+.footer p a:hover {
+    opacity: 0.3;
+}
+
+@media (min-width: 576px) {
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footerFollow{
+        margin-left: auto;
+        font-weight: 600;
+        padding-right: 7px;
+    }
+    
+    .footer-logo{
+        position:relative;
+        top:2px;
+    }
+    
+    .footerElche-logo{
+        padding-right: 10px;
+        padding-top: 3px;
+    }
+
+
+
+}
+
+
+/*************************
+ELEMENTOS ESPECIFICOS
+DE CADA WEB
+**************************/
+
+/*************************
+index.html PORTADA
+**************************/
+
+.frontPageHeader{
+    background-image: url("img/portada/frontPic2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 550px;
+}
+
+.frontPageHeader p{
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.frontPageHeader p a {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+    color:#ffffff;
+    text-shadow: 2px 2px rgb(61,153,112);
+    text-decoration: none;
+}
+
+
+.frontPageHeader p a:hover{
+    color:rgb(61,153,112);
+    text-shadow: none;
+}
+
+.sectionTitle h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    display: flex;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.frontPageLinksSection{
+    padding-bottom: 30px;    
+}
+
+.frontPageLinksSection .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.frontPageLinkImages{
+    width: 100%;
+    height: auto;
+}
+
+.frontPageLink h2{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.frontPageLink{
+    text-decoration: none;
+    color:#2A2A2A;
+}
+
+.frontPageLink:hover{
+    color:rgb(61,153,112);
+    opacity: 0.85;
+}
+
+
+.frontPageHeader img {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    animation: 5s circle;
+}
+   
+@keyframes circle {
+    from {
+      -webkit-clip-path: circle(0%);
+      clip-path: circle(0%);
+    }
+    to {
+      -webkit-clip-path: circle(160px);
+      clip-path: circle(160px);
+    }
+  }
+
+@media (min-width: 576px) {
+
+    .frontPageLinksSection .container{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .frontPageLinksSection h2{
+        font-size: 1.0rem;
+    }
+}
+
+
+
+/*************************
+presentacion.html PRESENTACION
+**************************/
+
+.presentationArticle1 {
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+
+.videocontainer {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.presentationArticle h1{
+    padding-top: 20px;
+}
+
+.presentationArticle a {
+  text-decoration: none;
+}
+
+.presentationArticle a:hover{
+    color:rgb(61,153,112);
+}
+
+.palm-grid-container {
+    padding-top: 20px;
+    text-align: center;
+}
+.palm-grid-container ul {
+    white-space: nowrap;
+
+  }
+  
+  .palm-grid-container ul, li {
+    list-style: none;
+    display: inline;
+  }
+
+  .palmSVG {
+    animation: fadeIn 5s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+/*************************
+enlaces.html ENLACES
+**************************/
+
+.sectionlinks ol {
+    padding-top: 25px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+
+}
+
+
+.sectionlinks ol li {
+    padding: 0px 5px 0 5px;
+    text-decoration: none;
+    margin: 0 0 1.5rem 0;
+    font-weight: 600;
+}
+
+.sectionlinks ol li a {
+    text-decoration: none;
+    color:#2A2A2A;
+    font-size: 1.1rem;
+}
+
+.sectionlinks ol li a:hover{
+    color:rgb(61,153,112);
+}
+
+
+.sectionlinks ol li p {
+    font-weight: 400;
+}
+
+
+/*************************
+quever.html CATEGORIA
+**************************/
+
+.queverContent{
+    padding-bottom: 30px;    
+    padding-top: 20px; 
+}
+
+.queverContent .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.queverContent article{
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #2A2A2A;
+    font-size: 0.9rem;
+
+}
+
+.queverContent article h1 a{
+    font-weight: 600;
+    padding-bottom: 5px;
+    color:rgb(61,153,112);
+
+}
+
+.queverContent article img{
+    width: 100%;
+}
+
+.queverContent article .queverDescription{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.queverContent article h1 a {
+    text-decoration: none;
+}
+
+.queverContent article:hover {
+    background-color: rgb(247, 255, 251);
+    opacity: 0.8;
+}
+
+
+@media (min-width: 576px) {
+    .queverContent .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+
+
+
+
+/*************************
+detalleMAHE.html DETALLE
+**************************/
+
+
+.MAHEArticle {
+    padding-bottom: 20px;
+}
+
+.MAHEArticle p {
+    margin: 0 0 1.0rem 0;
+}
+
+.MAHEArticle img {
+    padding: 20px 0 20px 0;
+    width: 100%;
+}
+
+.MAHEArticle iframe {
+    width: 100%;
+}
+
