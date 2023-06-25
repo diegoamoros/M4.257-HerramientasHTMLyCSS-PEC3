@@ -447,6 +447,7 @@ quever.html CATEGORIA
 
 .queverContent article img{
     width: 100%;
+    height: auto;
 }
 
 .queverContent article .queverDescription{
