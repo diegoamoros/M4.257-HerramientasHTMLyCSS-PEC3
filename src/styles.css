@@ -55,7 +55,7 @@ body {
     flex: 1 1;
     border-bottom: 2px solid;
     margin: auto;
-    color:rgb(46,133,95);
+    color:rgb(38,100,70);
   }
   .sectionTitle h1:before {
     margin-right: 10px
@@ -118,7 +118,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color:rgb(46,133,95);
+    color:rgb(38,100,70);
 }
 
 nav li.active a {
@@ -142,7 +142,7 @@ footer {
     padding-top: 15px;
     padding-bottom: 5px;
     background-color:#2A2A2A;
-    background-color:rgb(46,133,95);
+    background-color:rgb(38,100,70);
     color: #FFFFFF;
     line-height: 2.5;
     font-size: 0.7rem;
@@ -229,13 +229,13 @@ index.html PORTADA
     font-weight: 900;
     line-height: 1.2;
     color:#ffffff;
-    text-shadow: 2px 2px rgb(46,133,95);
+    text-shadow: 2px 2px rgb(38,100,70);
     text-decoration: none;
 }
 
 
 .frontPageHeader p a:hover{
-    color:rgb(46,133,95);
+    color:rgb(38,100,70);
     text-shadow: none;
 }
 
@@ -276,7 +276,7 @@ index.html PORTADA
 }
 
 .frontPageLink:hover{
-    color:rgb(46,133,95);
+    color:rgb(38,100,70);
     opacity: 0.85;
 }
 
@@ -348,7 +348,7 @@ presentacion.html PRESENTACION
 }
 
 .presentationArticle a:hover{
-    color:rgb(46,133,95);
+    color:rgb(38,100,70);
 }
 
 .palm-grid-container {
@@ -405,7 +405,7 @@ enlaces.html ENLACES
 }
 
 .sectionlinks ol li a:hover{
-    color:rgb(46,133,95);
+    color:rgb(38,100,70);
 }
 
 
@@ -441,7 +441,7 @@ quever.html CATEGORIA
 .queverContent article h1 a{
     font-weight: 600;
     padding-bottom: 5px;
-    color:rgb(46,133,95);
+    color:rgb(38,100,70);
 
 }
 
